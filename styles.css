@@ -1,43 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap");
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  max-height: 100vh;
 }
 
-.header {
-  position: relative;
-  text-align: center;
-  color: white;
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
-.header img {
-  width: 100%;
-  height: auto;
+.container-one {
+  width: 50vw;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.title {
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  font-family: "Lexend Peta", sans-serif;
-  color: #e4d9d9;
+.container-two {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: widthmix;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
-@media (max-width: 750px) {
-  .title {
-    font-size: 20px;
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .container-one,
+  .container-two {
+    width: 100vw;
+    height: 50vh;
   }
 }
 
-@media (min-width: 1000px) {
-  .title {
-    font-size: 40px;
+@keyframes widthmix {
+  0% {
+    width: 60vw;
+  }
+  100% {
+    width: 50vw;
   }
 }

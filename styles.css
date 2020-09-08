@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap");
+
 body {
   margin: 0;
+  font-family: "Kufam", cursive;
 }
 
 .main {
@@ -10,21 +13,46 @@ body {
 
 .container-one {
   width: 50vw;
-  background-color: #000;
+  background-color: #43464b;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  animation-name: fontmix;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
 .container-two {
   width: 50vw;
   display: flex;
+  background-color: #f5f7e3;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
   animation-name: widthmix;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
+}
+
+button {
+  position: absolute;
+  top: 80%;
+  left: 39%;
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background-color: #7eff0d;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
 }
 
 @media (max-width: 600px) {
@@ -45,5 +73,20 @@ body {
   }
   100% {
     width: 50vw;
+  }
+}
+
+@keyframes fontmix {
+  0% {
+    font-size: 10px;
+  }
+  100% {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-two {
+    animation: none;
   }
 }

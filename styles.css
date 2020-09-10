@@ -1,3 +1,166 @@
+<<<<<<< HEAD
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Kufam", cursive;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-one {
+  width: 50vw;
+  background-color: #43464b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  animation-name: fontmix;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.container-two {
+  width: 50vw;
+  display: flex;
+  background-image: url("imagens/programming.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  animation-name: widthmix;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn1 {
+  position: absolute;
+  top: 65%;
+  background-color: #7eff0d;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+
+.btn2 {
+  position: absolute;
+  top: 30%;
+  background-color: #7eff0d;
+  border-radius: 6px;
+  border: 1px solid #000;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1.5rem 3.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+
+.hidden-about {
+  position: absolute;
+  top: 11%;
+  left: 15%;
+  background: #7eff0d;
+  width: 70%;
+  max-height: 600px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 16px 19px 50px -6px rgba(85, 230, 28, 1);
+  -moz-box-shadow: 16px 19px 50px -6px rgba(85, 230, 28, 1);
+  box-shadow: 16px 19px 50px -6px rgba(85, 230, 28, 1);
+}
+
+.hidden-about p,
+.hidden-about h2 {
+  text-align: center;
+}
+
+.hidden-about p a {
+  text-decoration: none;
+}
+
+.hidden-about p a:visited {
+  color: inherit;
+}
+
+.hidden-about p a:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .container-one,
+  .container-two {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .container-two {
+    animation: none;
+  }
+
+  .btn1 {
+    top: 80%;
+    left: 26%;
+    width: 50%;
+  }
+
+  .hidden-about h2 {
+    font-size: 18px;
+  }
+}
+
+@keyframes widthmix {
+  0% {
+    width: 60vw;
+  }
+  100% {
+    width: 50vw;
+  }
+}
+
+@keyframes fontmix {
+  0% {
+    font-size: 10px;
+  }
+  100% {
+    font-size: 15px;
+  }
+}
+=======
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap");
 
 * {
@@ -133,3 +296,4 @@ body {
     font-size: 15px;
   }
 }
+>>>>>>> f8e468152b9e4ce81c392b7710e28dd4ce8337db
